@@ -18,3 +18,10 @@ console.log(Number(valueOfUndefined));       //Number Converts undefined into Na
 
 //Just like Numbers there is Boolean which converts 1 into true ; 0 into false, empty string into false 
 //Just like Numbers there is String which converts into strings 
+
+// Operations doing complex
+
+console.log("1" + 2); // this considers both as strings
+console.log(1 + "2");
+console.log(1 + 1 + "2");   //First perform op on int then combine strings
+console.log("2" + 1 + 1 );   //Consider all as strings and concate them
