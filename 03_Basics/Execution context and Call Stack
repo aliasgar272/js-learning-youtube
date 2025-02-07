@@ -1,0 +1,8 @@
+Java Execution Context
+
+it runs two main fucntions , third one is mentioned because its in mongoose
+1. Global Execution Context
+2. Function Execution Context
+3. Eval Execution Context (mongoose)
+
+There are 2 phases for code running
