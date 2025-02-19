@@ -8,6 +8,8 @@ const dcHeroes = ['superman', 'batman', 'flash']
 const allHeroes = marvelHeroes.concat(dcHeroes)
 console.log('Concatenated Array', allHeroes);
 
+/*+++++++++++++++++++++ Spread operator +++++++++++++++++++++++++*/
+
 const sabHeroes = [...marvelHeroes, ...dcHeroes]    //spreading in an array
 
 console.log('Spreading in an array', sabHeroes);
@@ -17,5 +19,6 @@ console.log('Spreading in an array', sabHeroes);
 console.log(Array.from("Aliasgar")); // String into an array
 
 console.log(Array.from({name : Ali}));  //Interesting, make objects into arrays by keys or value
+
 
 
