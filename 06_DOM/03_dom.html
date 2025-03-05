@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliasgar ki DOM pe charcha</title>
+</head>
+<body style="background-color: black; color: wheat; padding: 12px;">
+    <ul class="language">
+        <li class="sublang">English</li>
+        </ul>
+        </body>
+        <script>
+        function addLang (langAdd){
+        const selectQ = document.createElement('li')     //Create element of list
+        selectQ.innerHTML = `${langAdd}`             //What you want to add
+        document.querySelector('.language').appendChild(selectQ)    //where you want to add, that is the class language
+        
+    }
+   
+    addLang("Arabic")
+    addLang("Hindi")
+
+    // innerHTML way is not optimized as it traverses the whole tree
+    // Optimized way is
+    //Here we are directly adding the li and not traversing the whole tree
+    function addOptiLanguage (langAdd){
+        const selectQ = document.createElement('li')
+        selectQ.appendChild(document.createTextNode(langAdd))
+        document.querySelector('.language').appendChild(selectQ)
+
+    }
+    addOptiLanguage("Bihari")
+
+    //Edit values - replacing 2nd value
+
+     const secondLang = document.querySelector('li:nth-child(2)')
+     // secondLang.innerHTML = "Dothraki" // Not optimized
+     //optimized
+     const newEle = document.createElement('li')
+     newEle.appendChild(document.createTextNode("Dothraki"))
+     secondLang.replaceWith(newEle)
+
+    // Repplacing First value using outerHTML
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = "<li>Bhojpuri</li>"
+
+    //Remove 
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove() //Bhojpuri deleted
+</script>
+</html>
+
