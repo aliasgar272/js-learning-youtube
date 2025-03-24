@@ -43,3 +43,17 @@ setInterval(function () {
 
 
 ```
+## Project 4 Guess the Number
+
+```javascript
+
+const RandonNumb = parseInt(Math.random() * 100 + 1 )
+
+const submit = document.querySelector('#subt')
+const userInput = document.querySelector('#guessField').value
+const prevGuess = document.querySelector('.guesses')
+const remainGuess = document.querySelector('.lastResult')
+
+
+
+```
