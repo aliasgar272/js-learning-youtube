@@ -46,14 +46,48 @@ setInterval(function () {
 ## Project 4 Guess the Number
 
 ```javascript
+const RandonNumb = parseInt(Math.random() * 100 + 1);
 
-const RandonNumb = parseInt(Math.random() * 100 + 1 )
+const submit = document.querySelector('#subt');
+const userInput = document.querySelector('#guessField').value;
+const guessSlot = document.querySelector('.guesses');
+const remainGuess = document.querySelector('.lastResult');
+const LowOrHigh = document.querySelector('.lowOrHi');
+const startOver = document.querySelector('.resultParas');
 
-const submit = document.querySelector('#subt')
-const userInput = document.querySelector('#guessField').value
-const prevGuess = document.querySelector('.guesses')
-const remainGuess = document.querySelector('.lastResult')
+const p = document.createElement('p');
 
+let prevGuess = [];
+let numGuess = 1;
 
+let playGame = true;
+
+if (playGame) {
+  submit.addEventListener('click', function(e){
+    e.preventDefault();
+    const guess = parseInt(userInput.value);
+    console.log(guess);
+    validateGuess(guess);
+  });
+}
+function validateGuess(guess) {
+  //checks whether the input is right or wrong
+}
+function checkGuess(guess) {
+  //validate is only for checking but this for showing user
+}
+function displayGuess(guess) {
+  //
+}
+function displayMessage(message) {
+  //displays if input is wrong
+}
+
+function endGame(game) {
+  //
+}
+function newGame(game) {
+  //
+}
 
 ```
