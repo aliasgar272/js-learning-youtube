@@ -18,7 +18,7 @@ console.log('Spreading in an array', sabHeroes);
 //Converting into an Array
 console.log(Array.from("Aliasgar")); // String into an array
 
-console.log(Array.from({name : Ali}));  //Interesting, make objects into arrays by keys or value
+console.log(Array.from({name : "Ali"}));  //Interesting, make objects into arrays by keys or value
 
 
 

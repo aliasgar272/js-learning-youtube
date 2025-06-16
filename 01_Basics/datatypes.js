@@ -1,6 +1,6 @@
 // Primitive Data types
 // 7 types
-//They are call by valaues
+//They are call by values In call by value, a copy of the actual value is passed to the function, and any changes inside the function do not affect the original variable outside the function.
 // eg String , number, BigInt, null, undefined, Symbol, Boolean;
 //Javascript is dynamically typed , bec we dont need to define the dataype;
 // eg of Symbol , used in React to define buttons and all uniquely
@@ -11,12 +11,12 @@ console.log(typeof id);
 
 
 //undefined
-// by default if you dont assign a value to variable its undefined 
+// by default if you dont assign a value to variable its undefined => Undefined means there is no memory used whereas in Null there is some memory used 
 let var1;
 console.log(typeof var1);
 
 
-//Non Primitive dataypes (Reference) these are call by references
+//Non Primitive dataypes (Reference) these are call by references  => Any change in variable changes the actual value . In call by reference, a reference (or pointer) to the actual variable is passed, and any changes inside the function do affect the original variable outside the function
 // Arrays , Function and Object
 // Arrays
 const fruits = ["apple" , "tomato" , "orange"];

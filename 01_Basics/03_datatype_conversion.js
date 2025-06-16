@@ -25,3 +25,9 @@ console.log("1" + 2); // this considers both as strings
 console.log(1 + "2");
 console.log(1 + 1 + "2");   //First perform op on int then combine strings
 console.log("2" + 1 + 1 );   //Consider all as strings and concate them
+
+// Num as a string 
+console.log("123" + 4);     // addition of string and number concatenates it
+console.log("123" - 4);     // sub of str and num performs sub 
+console.log("123" * 4);     // mul of str and num performs multi
+console.log("123" / 4);     // div of str and num performs division 

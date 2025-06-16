@@ -44,3 +44,22 @@ console.log(typeof returnObject);                   // returning a function
 console.log(typeof returnObject());                 //() with this its returns an object, but its a function only
 console.log(returnObject);                            
 console.log(returnObject());                            
+
+
+// Arguments keyword is not defined in Arrow functions
+
+//  const exampleFunction = () => {
+//     console.log(arguments);
+    
+//  }
+//  exampleFunction("Ye nahi pass h")
+
+
+/*++++++++++++++++++++++++++ Hoisting is NOT available in Arrow Function but it is available in normal Function*/
+// Hoisting is that if I call function before defining a function  eg 
+
+// sayHello()
+// const sayHello = () => {
+//     console.log("Pehle nahi hoga baadme hoga");
+    
+// }

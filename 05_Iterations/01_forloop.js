@@ -13,10 +13,13 @@ for (let i = 0; i <= 10; i++) {
 // Printing in an Array 
 
 let myArray = ["Ali", "Hamza", "Idris"]
+console.log(myArray.length);
+// console.log(myArray);
 
+// print each element of an array
 for (let index = 0; index < myArray.length; index++) {
     const element = myArray[index];
-    // console.log(element);
+    console.log(element);
       
 }
 
@@ -49,7 +52,7 @@ for (let index = 0; index < myArray.length; index++) {
 // }
 // while (score <=10);
 
-let n =5;
+let n =6;
 let tara = ""; 
 if (n > 1) {
     

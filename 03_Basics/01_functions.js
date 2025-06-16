@@ -47,3 +47,4 @@ handleObject(user)      //since we passed the object as argument in the function
 //     name : "Behlul",
 //     age: 21
 // })
+

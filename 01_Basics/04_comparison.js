@@ -9,6 +9,7 @@ console.log(null == 0); // doesnt treat null as 0
 console.log(null >= 0);
 console.log(null <= 0);
 
+console.log("break");
 
 // === / strict check. Checks the datatype as well
 
